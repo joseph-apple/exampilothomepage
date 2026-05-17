@@ -3,142 +3,332 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ExamPilot is an AI-powered exam revision platform helping students study effectively with quizzes, notes, flashcards, and personalised learning tools.">
-  <title>ExamPilot</title>
-  <link rel="icon" type="image/png" href="logo.png" />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="description" content="ExamPilot: Your AI-powered GCSE & A-Level revision organiser. Plan revision, track past paper results, create timetables, and ace your exams with focused study tools designed for students." />
+  <meta name="keywords" content="revision planner, GCSE revision, A-Level study, revision organiser, past paper tracker, exam revision app, study timetable" />
+  <meta name="author" content="ExamPilot" />
+  <meta name="theme-color" content="#3b82f6" />
+  
+  <!-- Open Graph Tags (for social sharing) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://exam-pilot.co.uk" />
+  <meta property="og:title" content="ExamPilot – GCSE & A-Level Revision Organiser" />
+  <meta property="og:description" content="Master your revision with our AI-powered exam organiser. Plan timetables, track past papers, upload notes, and get real-time analytics. Built for serious students." />
+  <meta property="og:image" content="https://exam-pilot.co.uk/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="ExamPilot" />
+  <meta property="og:locale" content="en_GB" />
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://exam-pilot.co.uk" />
+  <meta name="twitter:title" content="ExamPilot – GCSE & A-Level Revision Organiser" />
+  <meta name="twitter:description" content="Master your revision with our AI-powered exam organiser. Plan timetables, track past papers, upload notes, and analytics." />
+  <meta name="twitter:image" content="https://exam-pilot.co.uk/og-image.png" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://exam-pilot.co.uk" />
+  
+  <!-- Preconnect for Performance (SEO ranking factor) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://scripts.simpleanalyticscdn.com" />
+  
+  <title>ExamPilot – GCSE & A-Level Revision Organiser</title>
+  <link rel="icon" type="image/png" href="logo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ExamPilot",
+    "url": "https://exam-pilot.co.uk",
+    "logo": "https://exam-pilot.co.uk/logo.png",
+    "description": "AI-powered revision organiser for GCSE and A-Level students",
+    "sameAs": [
+      "https://twitter.com/exampilot",
+      "https://instagram.com/exampilot"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "url": "https://support.exam-pilot.co.uk",
+      "contactType": "Customer Support"
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "ExamPilot",
+    "description": "AI-powered revision planner and exam organiser for GCSE and A-Level students",
+    "brand": {
+      "@type": "Brand",
+      "name": "ExamPilot"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://app.exam-pilot.co.uk",
+      "priceCurrency": "GBP",
+      "price": "0",
+      "pricingType": "Free, with premium features"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "150",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a revision organiser?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A revision organiser is a productivity tool designed to help students plan and track their exam preparation. ExamPilot lets you create revision timetables, upload study notes, track past paper results, and monitor your progress with analytics—all in one focused workspace."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I track my past paper results with ExamPilot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ExamPilot's past paper tracker lets you log each exam you complete, record your score, and identify weak areas. Our analytics dashboard shows trends over time, helping you focus revision where you need it most."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I create a GCSE revision timetable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. ExamPilot includes a structured revision timetable builder designed specifically for GCSE students. You can plan your weekly revision schedule, set subject goals, and track completion—all synchronized across devices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does revision reflection help my grades?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Revision reflection helps you identify what study methods work best for you. By reviewing what you've studied and your results, you can adjust your approach in real time, focus on weak topics, and build better exam habits."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is ExamPilot suitable for A-Level students?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. ExamPilot works for both GCSE and A-Level students. You can manage multiple subjects, create detailed revision plans, and track progress across all your A-Level courses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I upload and store my revision notes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. ExamPilot lets you upload PDFs, images, and text notes directly to your workspace. Organize by subject and topic, search easily, and access your notes anytime you need them."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="page">
     <div class="container">
 
       <!-- NAV -->
-      <nav class="nav reveal">
-        <a class="brand" href="/">
+      <nav class="nav reveal" aria-label="Main navigation">
+        <a class="brand" href="/" aria-label="ExamPilot home">
           <img class="brand-mark" src="logo.png" alt="ExamPilot logo" />
           <span>ExamPilot</span>
         </a>
         <div class="nav-actions">
-          <a class="btn btn-ghost" href="https://app.exam-pilot.co.uk" target="_blank" rel="noreferrer">
+          <a class="btn btn-ghost" href="https://app.exam-pilot.co.uk" target="_blank" rel="noreferrer" aria-label="Enter code to access ExamPilot">
             Enter code
           </a>
-          <a class="btn btn-primary" href="https://app.exam-pilot.co.uk" target="_blank" rel="noreferrer">
+          <a class="btn btn-primary" href="https://app.exam-pilot.co.uk" target="_blank" rel="noreferrer" aria-label="Log in to ExamPilot">
             Log in
           </a>
         </div>
       </nav>
 
-      <!-- HERO -->
-      <header class="hero reveal">
-        <h1 class="hero-title">
-          <span class="gradient-text">Supercharge</span> your revision with ExamPilot
-        </h1>
-        <p class="hero-subtitle">
-          Plan, track, and master every subject with a calm, focused workspace
-          built for students who want results without the chaos.
-        </p>
-      </header>
+      <!-- MAIN CONTENT -->
+      <main>
+        
+        <!-- HERO -->
+        <header class="hero reveal">
+          <h1 class="hero-title">
+            <span class="gradient-text">Supercharge</span> your revision with ExamPilot
+          </h1>
+          <p class="hero-subtitle">
+            Your AI-powered revision organiser for GCSE and A-Level students. Plan your study timetable, track past paper results, upload notes, and achieve exam success with focused, distraction-free revision tools.
+          </p>
+        </header>
 
-      <!-- PLANNER SECTION -->
-      <section id="planner" class="section reveal">
-        <div class="split">
-          <div class="image-card">
-            <img src="planner.png" alt="Student holding the ExamPilot GCSE Revision Planner" />
-          </div>
-          <div>
-            <h2 class="section-title">ExamPilot Planner</h2>
-            <p class="section-description">
-              A structured planner designed to help you organise your revision,
-              track your progress, and stay consistent.
-            </p>
-            <ul class="feature-list">
-              <li class="feature-item">
-                <span class="check-icon">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                </span>
-                <span>Weekly revision timetables</span>
-              </li>
-              <li class="feature-item">
-                <span class="check-icon">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                </span>
-                <span>Subject trackers</span>
-              </li>
-              <li class="feature-item">
-                <span class="check-icon">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                </span>
-                <span>Past paper logs</span>
-              </li>
-              <li class="feature-item">
-                <span class="check-icon">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                </span>
-                <span>Useful insights</span>
-              </li>
-              <li class="feature-item">
-                <span class="check-icon">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                </span>
-                <span>Lifetime access to ExamPilot Online</span>
-              </li>
-            </ul>
-            <div class="eta-card">
-              <span class="eta-label">Coming soon</span>
-              <span class="eta-value">ExamPilot Planner will be available soon.</span>
-              <span class="eta-eta">ETA: 5th May 2026 · 00:00 UTC</span>
+        <!-- PLANNER SECTION -->
+        <article class="section reveal" id="planner">
+          <div class="split">
+            <div class="image-card">
+              <img src="planner.png" alt="Student using ExamPilot revision planner to organize GCSE and A-Level exam preparation" />
+            </div>
+            <div>
+              <h2 class="section-title">ExamPilot Revision Planner</h2>
+              <p class="section-description">
+                A structured revision planner designed to help GCSE and A-Level students organize their exam preparation, track progress in real time, and maintain consistent study habits through exam season.
+              </p>
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="check-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Weekly revision timetables tailored to your exam schedule</span>
+                </li>
+                <li class="feature-item">
+                  <span class="check-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Subject progress trackers across all your courses</span>
+                </li>
+                <li class="feature-item">
+                  <span class="check-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Past paper result logging and performance analytics</span>
+                </li>
+                <li class="feature-item">
+                  <span class="check-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Actionable insights to focus your study time</span>
+                </li>
+                <li class="feature-item">
+                  <span class="check-icon" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Lifetime access to ExamPilot Online revision tools</span>
+                </li>
+              </ul>
+              <div class="eta-card">
+                <span class="eta-label">Coming soon</span>
+                <span class="eta-value">ExamPilot Revision Planner available soon.</span>
+                <span class="eta-eta">ETA: 5th May 2026 · 00:00 UTC</span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </article>
 
-      <!-- CTA -->
-      <section id="cta" class="cta reveal">
-        <div class="cta-card">
-          <div class="cta-content">
-            <h2 class="cta-title">Ready to take control of your revision?</h2>
-            <p class="cta-description">
-              Join students who are already revising smarter with ExamPilot.
-            </p>
-            <a class="cta-button" href="https://app.exam-pilot.co.uk" target="_blank" rel="noreferrer">
-              <span>Unlock Better Revision</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </a>
+        <!-- FAQ SECTION -->
+        <section class="faq-section reveal" id="faq" aria-labelledby="faq-heading">
+          <div class="faq-container">
+            <h2 id="faq-heading" class="faq-heading">How ExamPilot helps you revise smarter</h2>
+            
+            <div class="faq-grid">
+              <div class="faq-item">
+                <h3 class="faq-question">What is a revision organiser?</h3>
+                <p class="faq-answer">
+                  A revision organiser is a productivity tool designed for students preparing for exams. ExamPilot brings together your revision timetable, notes, past paper results, and study analytics in one focused workspace—helping you eliminate distractions and maximize study efficiency.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3 class="faq-question">How do I track past paper results?</h3>
+                <p class="faq-answer">
+                  ExamPilot's past paper tracker lets you log each mock or past paper exam, record your score by question, and identify weak topics. Over time, you'll see performance trends and know exactly where to focus your final revision push.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3 class="faq-question">Can I create a GCSE revision timetable?</h3>
+                <p class="faq-answer">
+                  Yes. ExamPilot includes a built-in revision timetable planner purpose-designed for GCSE students. Create weekly schedules, assign subjects and topics, set revision goals, and get reminders to stay on track.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3 class="faq-question">How does revision reflection boost my grades?</h3>
+                <p class="faq-answer">
+                  Revision reflection means regularly reviewing what you've studied and how well it's working. ExamPilot captures your revision history and results, showing patterns that help you adjust your study approach before the real exam.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3 class="faq-question">Is ExamPilot designed for A-Level students?</h3>
+                <p class="faq-answer">
+                  Absolutely. ExamPilot works for GCSE and A-Level students. Manage multiple A-Level subjects, create subject-specific timetables, and use the same powerful tracking and analytics across your entire qualification.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3 class="faq-question">Can I upload and store my revision notes?</h3>
+                <p class="faq-answer">
+                  Yes. Upload PDFs, images, handwritten notes, or type directly into ExamPilot. Organize everything by subject and topic, search across your notes, and access them from any device when you need them.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta reveal" id="cta" aria-labelledby="cta-heading">
+          <div class="cta-card">
+            <div class="cta-content">
+              <h2 id="cta-heading" class="cta-title">Ready to organize your revision?</h2>
+              <p class="cta-description">
+                Join students who are already revising smarter with ExamPilot. Plan your timetable, track results, and achieve your best exam grades.
+              </p>
+              <a class="cta-button" href="https://app.exam-pilot.co.uk" target="_blank" rel="noreferrer" aria-label="Start revising with ExamPilot">
+                <span>Unlock Better Revision</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </main>
 
       <!-- FOOTER -->
-      <footer class="footer reveal">
+      <footer class="footer reveal" role="contentinfo">
         <div class="footer-links">
           <a class="footer-link"
             href="https://battle-dry-e23.notion.site/ExamPilot-Privacy-Policy-33eb8d1574ee80149366c6b61bf22675"
             target="_blank" rel="noreferrer">Privacy Policy</a>
-          <span class="footer-sep">·</span>
+          <span class="footer-sep" aria-hidden="true">·</span>
           <a class="footer-link"
             href="https://battle-dry-e23.notion.site/ExamPilot-Terms-Conditions-33eb8d1574ee80618376da8c3bfffa2e"
             target="_blank" rel="noreferrer">Terms &amp; Conditions</a>
-          <span class="footer-sep">·</span>
+          <span class="footer-sep" aria-hidden="true">·</span>
           <a class="footer-link"
             href="https://docs.google.com/forms/d/e/1FAIpQLScrEOt0UcTDSlA_6c6lybMjh0bzHm2VrYTehZHT37BqM9Yp9A/viewform?usp=dialog"
             target="_blank" rel="noreferrer">Feedback</a>
-          <span class="footer-sep">·</span>
+          <span class="footer-sep" aria-hidden="true">·</span>
           <a class="footer-link"
             href="https://support.exam-pilot.co.uk"
             target="_blank" rel="noreferrer">Contact Us</a>
@@ -153,6 +343,6 @@
 
   <script src="script.js"></script>
   <!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
 </html>

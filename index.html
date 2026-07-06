@@ -158,6 +158,7 @@
           <span>ExamPilot</span>
         </a>
         <div class="nav-actions">
+          <a class="btn btn-ghost" href="/about" aria-label="About ExamPilot">About</a>
           <a class="btn btn-primary" href="https://app.exam-pilot.co.uk" target="_blank" rel="noreferrer" aria-label="Visit ExamPilot">
             Go to ExamPilot
           </a>
@@ -175,7 +176,42 @@
           <p class="hero-subtitle">
             Your revision organiser, built specially for GCSE and A-Level students. Plan your study timetable, track past paper results, upload notes, and achieve exam success.
           </p>
+          <div class="hero-badge">
+            <span class="badge-text">✓ Free forever. No ads. No card needed.</span>
+          </div>
         </header>
+
+        <!-- MAILING LIST SECTION -->
+        <section class="mailing-list-section reveal" id="mailing-list">
+          <div class="mailing-list-content">
+            <div>
+              <h2 class="mailing-list-heading">Be the first to know when ExamPilot launches</h2>
+              <p class="mailing-list-subheading">Join the waitlist and get early access. Free forever.</p>
+            </div>
+            <form
+              action="https://buttondown.com/api/emails/embed-subscribe/exampilot"
+              method="post"
+              class="mailing-list-form embeddable-buttondown-form"
+            >
+              <div class="form-group">
+                <input 
+                  type="email" 
+                  name="email" 
+                  id="bd-email" 
+                  placeholder="Enter your email"
+                  required
+                  aria-label="Email address"
+                />
+                <input type="submit" value="Join the waitlist" class="form-submit" />
+              </div>
+              <p class="form-note">
+                <a href="https://buttondown.com/refer/exampilot" target="_blank" rel="noreferrer">
+                  Powered by Buttondown
+                </a>
+              </p>
+            </form>
+          </div>
+        </section>
 
         <!-- PLANNER SECTION -->
         <article class="section reveal" id="planner">
@@ -314,6 +350,8 @@
       <!-- FOOTER -->
       <footer class="footer reveal" role="contentinfo">
         <div class="footer-links">
+          <a class="footer-link" href="/about" aria-label="About ExamPilot">About</a>
+          <span class="footer-sep" aria-hidden="true">·</span>
           <a class="footer-link"
             href="https://battle-dry-e23.notion.site/ExamPilot-Privacy-Policy-33eb8d1574ee80149366c6b61bf22675"
             target="_blank" rel="noreferrer">Privacy Policy</a>

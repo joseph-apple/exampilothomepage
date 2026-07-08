@@ -39,6 +39,36 @@
   <link rel="icon" type="image/png" href="logo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .about-intro {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .about-intro-image {
+      flex-shrink: 0;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .about-intro-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .about-intro-text h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .about-intro {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="page">
@@ -68,18 +98,37 @@
 
         <!-- ABOUT CONTENT -->
         <section class="about-content reveal">
+          
+          <!-- PERSONAL INTRODUCTION -->
+          <div class="about-section about-intro">
+            <div class="about-intro-image">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%235DADE2'/%3E%3Cellipse cx='100' cy='85' rx='35' ry='40' fill='%23F4A460'/%3E%3Ccircle cx='100' cy='60' r='25' fill='%23FDBCB4'/%3E%3Ccircle cx='87' cy='75' r='8' fill='%232C3E50'/%3E%3Ccircle cx='113' cy='75' r='8' fill='%232C3E50'/%3E%3Ccircle cx='87' cy='74' r='4' fill='%23FFFFFF'/%3E%3Ccircle cx='113' cy='74' r='4' fill='%23FFFFFF'/%3E%3Cellipse cx='100' cy='95' rx='8' ry='6' fill='%23C0917A'/%3E%3Cpath d='M 95 105 Q 100 108 105 105' stroke='%23C0917A' stroke-width='2' fill='none'/%3E%3Ccircle cx='80' cy='95' r='3' fill='%23F4A460'/%3E%3Ccircle cx='120' cy='95' r='3' fill='%23F4A460'/%3E%3C/svg%3E" alt="Joseph's avatar" />
+            </div>
+            <div class="about-intro-text">
+              <h2>Hi, I'm <strong>Joseph</strong></h2>
+              <p>
+                I'm a Year 11 student on a mission to revolutionize how students revise. During my own exam journey, I realized how frustrating it was to find a revision tool that actually respects your time and attention. Most platforms are cluttered with ads and distracting features that pull you away from what really matters—your studies.
+              </p>
+              <p>
+                That's why I created <strong>ExamPilot</strong>. I wanted to build something completely different: a clean, focused revision organizer with zero advertisements and no hidden costs. Something designed by a student, for students, that puts learning first and everything else second.
+              </p>
+              <p>
+                My goal is simple but ambitious—to make revision smarter, less stressful, and genuinely effective for GCSE and A-Level students everywhere. Because every student deserves access to powerful tools without the nonsense getting in the way.
+              </p>
+            </div>
+          </div>
+
+          <!-- EXAMPILOT MISSION -->
           <div class="about-section">
-            <h2>Why ExamPilot Exists</h2>
+            <h2><strong>The ExamPilot Promise</strong></h2>
             <p>
-              I'm building ExamPilot because I wanted to create a revision tool that's completely free and has no ads. I know how hard it is to get into a focused revision session, only to be interrupted by a 2-minute unskippable ad right when you're finally making progress.
+              ExamPilot will always be free and always be ad-free. No hidden pricing, no paid tiers, no tricks. Just a simple, honest tool built to help you revise effectively and organize your exam preparation without distractions.
             </p>
             <p>
-              That's not how it should be. Revision is hard enough without distractions designed to pull your attention away. Every student deserves access to tools that help them focus on what matters: their studies.
-            </p>
-            <p>
-              ExamPilot will always be free, always be ad-free, and always be built with students in mind. No hidden pricing, no paid tiers, no tricks. Just a simple, honest tool to help you revise smarter and ace your exams.
+              Every feature is designed with one thing in mind: helping you focus on what matters. Whether you're planning your revision timetable, tracking your progress, or preparing for your exams, ExamPilot is here to make it easier.
             </p>
           </div>
+
         </section>
 
         <!-- CTA -->

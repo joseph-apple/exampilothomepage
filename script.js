@@ -1,3 +1,10 @@
+// Show a site-wide maintenance notice
+var maintenanceBanner = document.createElement("div");
+maintenanceBanner.className = "maintenance-banner";
+maintenanceBanner.setAttribute("role", "status");
+maintenanceBanner.textContent = "Maintenance notice: The login credentials system isn't working. We aim to have it fixed by 24th Nov 2026.";
+document.body.insertBefore(maintenanceBanner, document.body.firstChild);
+
 // Set current year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
 

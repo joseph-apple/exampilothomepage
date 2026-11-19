@@ -40,6 +40,20 @@ img { max-width: 100%; display: block; }
   --gradient-green: linear-gradient(135deg, #34d399 0%, #10b981 45%, #059669 100%);
 }
 
+/* ─── MAINTENANCE BANNER ─── */
+.maintenance-banner {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  padding: 12px 24px;
+  background: #facc15;
+  color: #422006;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
 /* ─── RADIAL GLOW ─── */
 .page {
   position: relative;
